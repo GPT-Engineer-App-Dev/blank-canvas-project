@@ -65,15 +65,15 @@ const Index = () => {
                 {editingEvent?.id === event.id ? (
                   <VStack spacing={2}>
                     <FormControl>
-                      <FormLabel>Name</FormControl>
+                      <FormLabel>Name</FormLabel>
                       <Input value={editingEvent.name} onChange={(e) => setEditingEvent({ ...editingEvent, name: e.target.value })} />
                     </FormControl>
                     <FormControl>
-                      <FormLabel>Date</FormControl>
+                      <FormLabel>Date</FormLabel>
                       <Input type="date" value={editingEvent.date} onChange={(e) => setEditingEvent({ ...editingEvent, date: e.target.value })} />
                     </FormControl>
                     <FormControl>
-                      <FormLabel>Description</FormControl>
+                      <FormLabel>Description</FormLabel>
                       <Input value={editingEvent.description} onChange={(e) => setEditingEvent({ ...editingEvent, description: e.target.value })} />
                     </FormControl>
                     <HStack spacing={2}>
@@ -98,15 +98,15 @@ const Index = () => {
               <Text fontSize="lg" mb={2}>Add New Event</Text>
               <VStack spacing={2}>
                 <FormControl>
-                  <FormLabel>Name</FormControl>
+                  <FormLabel>Name</FormLabel>
                   <Input value={newEvent.name} onChange={(e) => setNewEvent({ ...newEvent, name: e.target.value })} />
                 </FormControl>
                 <FormControl>
-                  <FormLabel>Date</FormControl>
+                  <FormLabel>Date</FormLabel>
                   <Input type="date" value={newEvent.date} onChange={(e) => setNewEvent({ ...newEvent, date: e.target.value })} />
                 </FormControl>
                 <FormControl>
-                  <FormLabel>Description</FormControl>
+                  <FormLabel>Description</FormLabel>
                   <Input value={newEvent.description} onChange={(e) => setNewEvent({ ...newEvent, description: e.target.value })} />
                 </FormControl>
                 <Button colorScheme="blue" onClick={handleAddEvent}>Add Event</Button>
